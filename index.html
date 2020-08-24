@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TITLE</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <header class="main-header">
+        <h1 class="title"> The Code Review </h1>
+    </header>
+
+    <div class="flex-container">
+        <form action="index.html" method="post">
+
+            <fieldset class="">
+
+                <h2>Sign up for the Newsletter</h2>
+                <h3>Get the latest news on how your code is doing right in your inbox</h3>
+                <h2>
+                    <legend>Contact Information</legend>
+                </h2>
+
+                <div class="flex-item">
+                    <label for="full-name"> Full Name:</label>
+                </div>
+                <div class="flex-item">
+                    <input type="text" id="full-name" placeholder="Required" name="full-name"><br><br>
+                </div>
+
+                <div class="flex-item">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="flex-item">
+                    <input type="email" id="email" name="email"><br><br>
+                </div>
+
+                <div class="flex-item">
+                    <label for="phone">Enter your phone number:</label>
+                </div>
+                <div class="flex-item">
+                    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+                </div>
+
+                <div class="flex-item">
+                    <label for="street-address">Street Address:</label>
+                </div>
+                <div class="flex-item">
+                    <input type="text" id="street-address" name="street-address"><br><br>
+                </div>
+
+                <div class="flex-item">
+                    <label for="city">City:</label>
+                </div>
+                <div class="flex-item">
+                    <input type="text" id="city" name="city"><br><br>
+                </div>
+
+                <div class="flex-item">
+                    <label for="state"> State:</label>
+                </div>
+                <div class="flex-item">
+                    <input type="text" id="state" name="state"><br><br>
+                </div>
+
+                <div class="flex-item">
+                    <label for="zip">Zip Code :</label>
+                </div>
+                <div class="flex-item">
+                    <input type="text" id="zip" name="zip"><br><br>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <h2>
+                    <legend>Newsletter</legend>
+                </h2>
+                <h2> Select the newsletter you would like to recieve</h2>
+                <div class="flex-item">
+                    <label for="HTML-news">HTML News:</label>
+                    <input type="checkbox" id="HTML-news" value="HTML-news" name="news"><br>
+                </div>
+                <div class="flex-item">
+                    <label for="CSS-news">CSS News:</label>
+                    <input type="checkbox" id="CSS-news" value="CSS-news" name="news"><br>
+                </div>
+                <div class="flex-item">
+                    <label for="javascript-news">Javascript News:</label>
+                    <input type="checkbox" id="javascript-news" value="javascript-news" name="news"><br>
+                </div>
+                <div class="flex-item">
+                    <h2> Newsletter format</h2>
+                </div>
+                <div class="flex-item">
+                    <label for="html">HTML</label>
+                    <input type="radio" id="html" name="format" value="html"><br>
+                </div>
+                <div class="flex-item">
+                    <label for="plain-text">Plain Text</label>
+                    <input type="radio" id="plain-text" name="format" value="plain-text"><br>
+                </div>
+                <div class="flex-item">
+                    <label for="other"> Other Topics you'd like to hear about!</label>
+                    <textarea id="other" name="other" value="other" placeholder="Write here..."></textarea><br><br>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+
+</html>
