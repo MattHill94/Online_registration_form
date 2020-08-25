@@ -54,6 +54,13 @@ legend {
     font-family: 'Merriweather', serif;
     text-align: left;
     font-weight: 900;
+    padding: 0;
+    display: inline-block;
+}
+
+.legend-main {
+    width: 100%;
+    background-color: #15bcc2;
 }
 
 input[type=text],
@@ -71,12 +78,6 @@ textarea {
 
 fieldset {
     border: white;
-    padding: 0;
-}
-
-.contact {
-    border-bottom: solid black;
-    background-color: #15bcc27a;
 }
 
 form {
@@ -162,17 +163,25 @@ select {
 footer {
     padding: 20px 0;
     text-align: center;
-    color: grey;
+    color: white;
+    background-color: #093a58;
+}
+
+.contact {
+    background-color: #15bcc2;
+    padding: 0;
 }
 
 input:hover,
 select:hover {
     border: 2px solid #0099cc;
+    transition: 0.5s;
 }
 
 input:focus,
 textarea:focus {
     background-color: #66e0ff91;
+    transition: 0.5s;
 }
 
 
@@ -196,7 +205,7 @@ Media Query
         flex-basis: 25%;
         font-size: 20px;
     }
-    .zip input {
+    #zip {
         max-width: 25%;
     }
 }
