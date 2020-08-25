@@ -71,10 +71,12 @@ textarea {
 
 fieldset {
     border: white;
+    padding: 0;
 }
 
 .contact {
     border-bottom: solid black;
+    background-color: #15bcc27a;
 }
 
 form {
