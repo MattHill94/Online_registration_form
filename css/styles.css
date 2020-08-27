@@ -35,7 +35,7 @@ a {
 h2,
 h3,
 h4 {
-    margin-top: 0;
+    font-size: medium;
 }
 
 h4 {
@@ -44,23 +44,31 @@ h4 {
 }
 
 h3 {
-    color: #093a58;
+    color: #093a58b2;
     text-align: center;
     border-bottom: solid 6px black;
     margin-bottom: 1%;
+    font-size: small;
+}
+
+.banner,
+h2,
+h3 {
+    justify-content: start;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-bottom: .5em;
+    padding-right: .5em;
+    padding-left: .5em;
 }
 
 legend {
     font-family: 'Merriweather', serif;
     text-align: left;
     font-weight: 900;
-    padding: 0;
+    padding: 0.5em;
     display: inline-block;
-}
-
-.legend-main {
-    width: 100%;
-    background-color: #15bcc2;
 }
 
 input[type=text],
@@ -78,7 +86,13 @@ textarea {
 
 fieldset {
     border: white;
-    margin: 1 1;
+    padding-top: 0;
+}
+
+.fieldset-1 {
+    border: white;
+    padding-top: 0;
+    border-bottom: solid black;
 }
 
 form {
@@ -168,11 +182,6 @@ footer {
     background-color: #093a58;
 }
 
-.contact {
-    background-color: #15bcc2;
-    padding: 0;
-}
-
 input:hover,
 select:hover {
     border: 2px solid #0099cc;
@@ -183,6 +192,10 @@ input:focus,
 textarea:focus {
     background-color: #66e0ff91;
     transition: 0.5s;
+}
+
+#zip {
+    max-width: 40%;
 }
 
 
@@ -206,7 +219,7 @@ Media Query
         flex-basis: 25%;
         font-size: 20px;
     }
-    input[] {
+    #zip {
         max-width: 25%;
     }
 }
